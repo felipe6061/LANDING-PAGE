@@ -1,0 +1,56 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+}
+
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: #e9a209;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    /* Transição suave */
+    position: relative;
+}
+
+
+/* Estado active corrigido */
+.nav-item.active a {
+    color: #1d1d1d;
+    border-bottom: 3px solid #ffe100;
+}
+
+/* Opcional: linha inferior no hover */
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #e9a209;
+    /* Linha menu */
+    transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after {
+    width: 100%;
+}
