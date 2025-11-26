@@ -9,10 +9,11 @@
 }
 
 body {
-    background-color: #fff9ea; /*COR DO FUNDO */
+    background-color: #fff9ea;
+    /*COR DO FUNDO */
 }
 
-section{
+section {
     padding: 28px 8%;
 }
 
@@ -30,6 +31,42 @@ section{
     transition: background-color .3s ease;
 }
 
-.btn-default:hover{
-    background-color: #f8d477; /*cor hover botão*/
+.btn-default:hover {
+    /*cor */
+    background-color: #f8d477;
+
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #1d1d1d;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.56rem;
+    color: #e9a209;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
 }
